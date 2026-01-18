@@ -1,0 +1,11 @@
+@Host = http://localhost:1234
+
+### login
+POST {{Host}}/api/v1/auth/login
+Accept: application/json
+Content-Type: application/json
+
+{
+  "Email": "mustafa.seymen@bil.omu.edu.tr",
+  "Password": "mustafa"
+}

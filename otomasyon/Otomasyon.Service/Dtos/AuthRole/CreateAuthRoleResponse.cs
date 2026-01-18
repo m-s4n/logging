@@ -1,0 +1,7 @@
+namespace Otomasyon.Service.Dtos.AuthRole;
+
+public sealed record CreateAuthRoleResponse
+{
+    public Guid Id { get; init; } = Guid.Empty!;
+    public string Name { get; init; } = null!;
+}

@@ -1,0 +1,28 @@
+@Host = http://localhost:1234
+
+## get roles
+GET {{Host}}/api/v1/auth-roles/get-roles
+Accept: application/json
+
+
+### add role
+POST {{Host}}/api/v1/auth-roles/add-role
+Accept: application/json
+Content-Type: application/json
+
+{
+  "Name": "escort"
+}
+
+### update role
+PUT {{Host}}/api/v1/auth-roles/update-role/5229669a-22a6-424e-afe8-51fa591bdd9a
+Accept: application/json
+Content-Type: application/json
+
+{
+  "Name": "xx"
+}
+
+### delete role
+DELETE {{Host}}/api/v1/auth-roles/delete-user/5229669a-22a6-424e-afe8-51fa591bdd9a
+Accept: application/json
